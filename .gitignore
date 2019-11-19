@@ -1,0 +1,41 @@
+# Terraform
+**/.terraform/*
+.terraform
+.terragrunt-cache
+*.tfstate*
+*.tfstate.*
+
+# logs
+*.log
+
+# SSH Keys
+*.pem
+
+# Ignored vscode files
+.vscode/
+
+# Ignored Terraform files
+*gitignore*.tf
+
+# Secrets are not allowed in general
+*password
+*token
+*.key
+*.pem
+
+# Secrets are encrypted using git-crypt
+!files/secrets/*/*
+
+# OS X
+.history
+.DS_Store
+
+# IntelliJ
+.idea_modules
+*.iml
+*.iws
+*.ipr
+.idea/
+build/
+*/build/
+out/
